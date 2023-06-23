@@ -1,0 +1,993 @@
+/* variables*/
+
+:root {
+    --red-btn: #ED6B70;
+    --yellow-btn: #F8C623;
+    --green-btn: #9AB35A;
+    --raspberry: #EA047E;
+    --green: #7DCE13;
+    --violet: #C47AFF;
+    --blue: #47B5FF;
+    --white: #F9F9F9;
+    --bg-editor: #06283D;
+    --bg: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+
+/* background color gradient */
+
+body {
+    background: var(--bg);
+}
+
+/* editor container */
+
+.editor__container {
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    border-radius: 5px;
+}
+
+/* top bar */
+
+.top__bar {
+    background: #fff;
+    border-radius: 5px 5px 0px 0px;
+    height: 15px;
+    width: 100%;
+}
+
+.circle__container {
+    display: flex;
+    float: right;
+    margin: 3px;
+    position: relative;
+    left: -5px;
+}
+
+.c1 {
+    background: var(--red-btn);
+    margin-right: 3px;
+}
+
+.c2 {
+    background: var(--yellow-btn);
+    margin-right: 3px;
+}
+
+.c3 {
+    background: var(--green-btn);
+}
+
+.cz {
+    width: 8px;
+    height: 8px;
+}
+
+/* editor screen */
+
+.editor__screen {
+    background: var(--bg-editor);
+    width: 300px;
+    height: 200px;
+}
+
+/* side bar*/
+
+.sidebar {
+    width: 20px;
+    height: 200px;
+    background: #4D7DBF;
+}
+
+/* bottom bar */
+
+.bottom__bar {
+    height: 15px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* border radius */
+
+.br {
+    border-radius: 100%;
+}
+
+.folder__container {
+    padding: 2.5px;
+}
+
+.folder {
+    width: 15px;
+    height: 10px;
+    border-radius: 3px;
+    background: #9FB3DC;
+    margin-top: 5px;
+}
+
+.line__container {
+    position: relative;
+    bottom: 185px;
+    left: 30px;
+    color: #fff;
+    width: 260px;
+}
+
+.disf{
+    display: flex;
+}
+
+/* lines */
+
+.line1 {
+    width: 40%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line1 2s;
+    visibility: hidden;
+}
+
+.line2 {
+    width: 20%;
+    background: var(--green);
+    height: 5px;
+    margin: 3px;
+    animation: line2 2s;
+    visibility: hidden;
+}
+
+.line3 {
+    width: 40%;
+    background: var(--violet);
+    height: 5px;
+    margin: 3px;
+    animation: line3 2s;
+    visibility: hidden;
+}
+
+.line4 {
+    width: 20%;
+    background: var(--green);
+    height: 5px;
+    margin: 3px;
+    animation: line4 2s;
+    visibility: hidden;
+}
+
+.line5 {
+    width: 15%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line5 2s;
+    visibility: hidden;
+}
+
+.line6 {
+    width: 15%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line6 2s;
+    visibility: hidden;
+}
+
+.line7 {
+    width: 30%;
+    background: var(--green);
+    height: 5px;
+    margin: 3px;
+    animation: line7 2s;
+    visibility: hidden;
+}
+
+.line8 {
+    width: 15%;
+    background: var(--blue);
+    height: 5px;
+    margin: 3px;
+    animation: line8 2s;
+    visibility: hidden;
+}
+
+.line9 {
+    width: 40%;
+    background: var(--violet);
+    height: 5px;
+    margin: 3px;
+    animation: line9 2s;
+    visibility: hidden;
+}
+
+.line10 {
+    width: 10%;
+    background: var(--green);
+    height: 5px;
+    margin: 3px;
+    animation: line10 2s;
+    visibility: hidden;
+}
+
+.line11 {
+    width: 40%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line11 2s;
+    visibility: hidden;
+}
+
+.line12 {
+    width: 15%;
+    background: var(--green);
+    height: 5px;
+    margin: 3px;
+    animation: line12 2s;
+    visibility: hidden;
+}
+
+.line13 {
+    width: 40%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line13 2s;
+    visibility: hidden;
+}
+
+.line14 {
+    width: 15%;
+    background: var(--violet);
+    height: 5px;
+    margin: 3px;
+    animation: line14 2s;
+    visibility: hidden;
+}
+
+.line15 {
+    width: 20%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line15 2s;
+    visibility: hidden;
+}
+
+.line16 {
+    width: 15%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line16 2s;
+    visibility: hidden;
+}
+
+.line17 {
+    width: 10%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line17 2s;
+    visibility: hidden;
+}
+
+.line18 {
+    width: 20%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line18 2s;
+    visibility: hidden;
+}
+
+.line19 {
+    width: 25%;
+    background: var(--violet);
+    height: 5px;
+    margin: 3px;
+    animation: line19 2s;
+    visibility: hidden;
+}
+
+.line20 {
+    width: 25%;
+    background: var(--blue);
+    height: 5px;
+    margin: 3px;
+    animation: line20 2s;
+    visibility: hidden;
+}
+
+.line21 {
+    width: 15%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line21 2s;
+    visibility: hidden;
+}
+
+.line22 {
+    width: 30%;
+    background: var(--violet);
+    height: 5px;
+    margin: 3px;
+    animation: line22 2s;
+    visibility: hidden;
+}
+
+.line23 {
+    width: 15%;
+    background: var(--blue);
+    height: 5px;
+    margin: 3px;
+    animation: line23 2s;
+    visibility: hidden;
+}
+
+.line24 {
+    width: 15%;
+    background: var(--blue);
+    height: 5px;
+    margin: 3px;
+    animation: line24 2s;
+    visibility: hidden;
+}
+
+.line25 {
+    width: 30%;
+    background: var(--green);
+    height: 5px;
+    margin: 3px;
+    animation: line25 2s;
+    visibility: hidden;
+}
+
+.line26 {
+    width: 30%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line26 2s;
+    visibility: hidden;
+}
+
+.line27 {
+    width: 30%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line27 2s;
+    visibility: hidden;
+}
+
+.line28 {
+    width: 10%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line28 2s;
+    visibility: hidden;
+}
+
+.line29 {
+    width: 10%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line29 2s;
+    visibility: hidden;
+}
+
+.line30 {
+    width: 10%;
+    background: var(--violet);
+    height: 5px;
+    margin: 3px;
+    animation: line30 2s;
+    visibility: hidden;
+}
+
+.line31 {
+    width: 10%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line31 2s;
+    visibility: hidden;
+}
+
+.line32 {
+    width: 10%;
+    background: var(--green);
+    height: 5px;
+    margin: 3px;
+    animation: line32 2s;
+    visibility: hidden;
+}
+
+.line33 {
+    width: 20%;
+    background: var(--violet);
+    height: 5px;
+    margin: 3px;
+    animation: line33 2s;
+    visibility: hidden;
+}
+
+.line34 {
+    width: 15%;
+    background: var(--blue);
+    height: 5px;
+    margin: 3px;
+    animation: line34 2s;
+    visibility: hidden;
+}
+
+.line35 {
+    width: 8%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line35 2s;
+    visibility: hidden;
+}
+
+.line36 {
+    width: 15%;
+    background: var(--blue);
+    height: 5px;
+    margin: 3px;
+    animation: line36 2s;
+    visibility: hidden;
+}
+
+.line37 {
+    width: 20%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line37 2s;
+    visibility: hidden;
+}
+
+.line38 {
+    width: 20%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line38 2s;
+    visibility: hidden;
+}
+
+.line39 {
+    width: 15%;
+    background: var(--green);
+    height: 5px;
+    margin: 3px;
+    animation: line39 2s;
+    visibility: hidden;
+}
+
+.line40 {
+    width: 10%;
+    background: var(--white);
+    height: 5px;
+    margin: 3px;
+    animation: line40 2s;
+    visibility: hidden;
+}
+
+.line41 {
+    width: 35%;
+    background: var(--raspberry);
+    height: 5px;
+    margin: 3px;
+    animation: line41 2s;
+    visibility: hidden;
+}
+
+/* rows */
+
+.row2 {
+    margin-left: 20px;
+}
+
+.row3 {
+    margin-left: 40px;
+}
+
+.row4 {
+    margin-left: 40px;
+}
+
+.row5 {
+    margin-left: 20px;
+}
+
+.row6 {
+    margin-left: 20px;
+}
+
+.row7 {
+    margin-left: 40px;
+}
+
+.row9 {
+    margin-left: 20px;
+}
+
+.row10 {
+    margin-left: 40px;
+}
+
+.row11 {
+    margin-left: 40px;
+}
+
+.row12 {
+    margin-left: 40px;
+}
+
+.row13 {
+    margin-left: 20px;
+}
+
+.row14 {
+    margin-left: 40px;
+}
+
+.row15 {
+    margin-left: 20px;
+}
+
+
+
+/* animations */
+
+@keyframes line1 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 40%;
+        background: var(--green); 
+    }80%{
+        width: 10%;
+    }     
+}
+
+@keyframes line2 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 80%;
+        background: var(--blue); 
+    } 
+       
+}
+
+@keyframes line3 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 60%;
+        background: var(--raspberry); 
+    }70%{
+        width: 10%;
+    } 
+       
+}
+
+@keyframes line4 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 15%;
+        background: var(--blue); 
+    } 
+       
+}
+
+@keyframes line5 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--blue); 
+    } 
+       
+}
+
+@keyframes line6 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--blue); 
+    }80%{
+        width: 5%;
+    } 
+       
+}
+
+@keyframes line7 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 20%;
+        background: var(--green); 
+    }80%{
+        width: 100%;
+    } 
+       
+}
+
+@keyframes line8 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 0%;
+        background: var(--raspberry); 
+    }80%{
+        width: 90%;
+    } 
+       
+}
+
+@keyframes line9 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 40%;
+        background: var(--blue); 
+    } 
+       
+}
+
+@keyframes line10 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 0%;
+        background: var(--green); 
+    } 
+       
+}
+
+@keyframes line11 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 30%;
+        background: var(--violet); 
+    } 
+       
+}
+
+@keyframes line12 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--blue); 
+    } 
+       
+}
+
+@keyframes line13 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 5%;
+        background: var(--green); 
+    } 
+       
+}
+
+@keyframes line14 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--raspberry); 
+    } 
+       
+}
+
+@keyframes line15 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 50%;
+        background: var(--violet); 
+    } 
+       
+}
+
+@keyframes line16 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 50%;
+        background: var(--blue); 
+    } 
+       
+}
+
+@keyframes line17 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--green); 
+    } 
+       
+}
+
+@keyframes line18 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--raspberry); 
+    } 
+       
+}
+
+@keyframes line19 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 30%;
+        background: var(--blue); 
+    } 
+       
+}
+
+@keyframes line20 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--violet); 
+    } 
+}
+
+@keyframes line21 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 60%;
+        background: var(--blue); 
+    } 
+}
+
+@keyframes line22 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 30%;
+        background: var(--green); 
+    } 
+}
+
+@keyframes line23 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 20%;
+        background: var(--white); 
+    } 
+}
+
+@keyframes line24 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 60%;
+        background: var(--raspberry); 
+    } 
+}
+
+@keyframes line25 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--green); 
+    } 
+}
+
+@keyframes line26 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--blue); 
+    } 
+}
+
+@keyframes line27 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 20%;
+        background: var(--blue); 
+    } 
+}
+
+@keyframes line28 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 15%;
+        background: var(--raspberry); 
+    } 
+}
+
+@keyframes line29 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 0%;
+        background: var(--blue); 
+    } 
+}
+
+@keyframes line30 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 0%;
+        background: var(--raspberry); 
+    } 
+}
+
+@keyframes line31 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 20%;
+        background: var(--green); 
+    }80%{
+        width: 0%;
+    } 
+}
+
+@keyframes line32 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--raspberry); 
+    } 
+}
+
+@keyframes line33 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 20%;
+        background: var(--green); 
+    } 
+}
+
+@keyframes line34 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--blue); 
+    } 
+}
+
+@keyframes line35 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 15%;
+        background: var(--raspberry); 
+    } 
+}
+
+@keyframes line36 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 0%;
+        background: var(--blue); 
+    } 
+}
+
+@keyframes line37 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 0%;
+        background: var(--green); 
+    } 
+}
+
+@keyframes line38 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--blue); 
+    } 
+}
+
+@keyframes line39 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 10%;
+        background: var(--green); 
+    } 
+}
+
+@keyframes line40 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 0%;
+        background: var(--green); 
+    } 
+}
+
+@keyframes line41 {
+    0%{
+        width: 0%;
+        
+    }50%{
+        width: 0%;
+        background: var(--raspberry); 
+    } 
+}
